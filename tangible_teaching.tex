@@ -1,0 +1,355 @@
+% !TEX encoding = UTF-8 Unicode
+
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%% $Id: elsarticle-template-num.tex 4 2009-10-24 08:22:58Z rishi $
+%%
+%% \documentclass[preprint,12pt,3p]{elsarticle}
+%% \documentclass[preprint,review,12pt]{elsarticle}
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+\documentclass[final,3p,times,twocolumn]{elsarticle}
+
+% Packages
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp,marvosym}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage[super]{nth}
+\usepackage[inline]{enumitem}
+%\usepackage{moreenum}
+\usepackage{tabulary}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[super]{nth}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{upquote}
+\usepackage{minted}
+\usemintedstyle{bw}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Special characters
+\usepackage{gensymb}
+\usepackage{amsmath,amssymb}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\journal{Landscape and Urban Planning}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Tangible Landscape: a hands-on method for teaching grading and geomorphology}
+
+\author[cga,la]{Brendan Alexander Harmon\corref{cor1}}
+\cortext[cor1]{Corresponding author}
+
+\ead{brendan.harmon@gmail.com}
+\ead[url]{baharmon@github.io}
+
+\author[cga,meas]{Anna Petrasova}
+%\ead{akratoc@ncsu.edu }
+
+\author[cga,meas]{Vaclav Petras}
+%\ead{vpetras@ncsu.edu}
+
+\author[cga,la]{Payam Tabrizian}
+%\ead{ptabriz@ncsu.edu}
+
+\author[cga,meas]{Helena Mitasova}
+%\ead{hmitaso@ncsu.edu}
+
+\author[la]{Andrew Fox}
+%\ead{aafox@ncsu.edu}
+
+\author[la]{Carla Delcambre}
+
+\author[la]{Robbie Layton}
+
+\author[la]{Eugene Bressler}
+
+\author[cga,fer]{Ross Meentemeyer}
+%\ead{rkmeente@ncsu.edu }
+
+\address[cga]{Center for Geospatial Analytics, North Carolina State University, Raleigh, North Carolina, United States of America}
+\address[la]{Department of Landscape Architecture, North Carolina State University, Raleigh, North Carolina, United States of America}
+\address[meas]{Department of Marine, Earth, and Atmospheric Sciences, North Carolina State University, Raleigh, North Carolina, United States of America}
+\address[fer]{Department of Forestry and Environmental Resources, North Carolina State University, Raleigh, North Carolina, United States of America}
+
+% -------------- ABSTRACT --------------
+
+\begin{abstract}
+% overview
+We present a hands-on method for teaching grading, geomorphology, and hydrology 
+using Tangible Landscape -- a tangible interface for geospatial modeling. 
+% tangible landscape
+Tangible Landscape couples a physical and digital model of a landscape 
+through a real-time cycle 
+of hands-on modeling, 3D scanning, geospatial computation, and projection.
+With Tangible Landscape students
+can sculpt a topographic model of a landscape with their hands
+and immediately see how they are changing geospatial analytics like
+contours, hill-shading, and flow water. 
+% embodied cognition
+By kinaesthetically feeling and manipulating the shape of the topography 
+students can intuitively learn about 3D topographic form, 
+about topographic representations, and how topography controls physical processes.
+% experiment
+A series of experiments has demonstrated that Tangible Landscape 
+is highly intuitive and 
+can improve users 3D spatial performance
+by enabling embodied cognition.
+% teaching methods 
+In this paper we propose tangible teaching methods 
+using real-time geospatial analytics such as 
+contour modeling, simulated water flow, landform recognition, 
+cut-fill analysis, and landscape evolution. 
+We also discuss how these methods can be integrated into 
+landscape architecture and geomorphology curriculums. % include Karl Wegmann?
+\end{abstract}
+
+\begin{keyword}
+topography \sep grading \sep geomorphology \sep tangible user interfaces \sep geospatial modeling \sep education \sep embodied cognition \sep serious gaming
+\end{keyword}
+
+\end{frontmatter}
+
+% -------------- TOC --------------
+\tableofcontents
+\vfil
+\pagebreak
+
+% -------------- BODY --------------
+
+\section{Introduction}\label{intro}
+\subsection{Why and how grading is taught}
+\noindent
+Understanding and representing the earth's surface \\
+Cartography \\
+Earthmoving \\
+In landscape architecture and civil engineering: \\
+Focus on contours for representation \\
+Focus on meshes for computation and construction \\
+
+\noindent
+Teaching grading \\
+Represent and manipulate topography \\
+Drawing 2D contours \\
+Cutting 3D contour models \\
+
+\subsection{Literature review}
+
+\subsubsection{Curriculum review}
+
+\subsubsection{Methods review}
+
+\subsubsection{Spatial cognition}
+
+\subsection{Aims and objectives}
+\noindent
+% The aim of this research was to
+\textbf{Aim:}
+Develop an intuitive method for learning about and manipulating
+topography, geomorphology, and hydrology
+that encourages embodied cognition and metacognition. \\
+
+% form, volume, morphology, processes, scale, and representation
+
+%\noindent
+%\textbf{Objectives:}
+%\begin{itemize}
+%\item Develop an intuitive method for learning about and manipulating
+%topography, geomorphology, and hydrology.
+%\item Integrate this method into 
+%landscape architecture and geomorphology curriculums.
+%\end{itemize}
+
+\subsection{Concept}
+\noindent
+Tangible Landscape as an educational tool\\
+3D rendering and VR \\
+Serious gaming \\
+
+\section{Tangible Landscape}\label{tangible_landscape}
+\subsection{Technology}
+
+\subsection{Experiment}
+\cite{Harmon2016c}
+
+\section{Teaching methods}\label{methods}
+
+%\subsection{Contours}
+
+%\subsection{Flooding}
+
+\subsection{Water flow}
+\noindent
+\textbf{Challenge:} find the highest point from which water will flow to a given point \\
+\textbf{Analysis:} r.drain / drain direction \\
+\textbf{Interactions:} marker  \\
+\textbf{Learning:} water flow \\
+
+\noindent
+\textbf{Challenge:} sculpt topography to make water flow to a given point \\
+\textbf{Analysis:} water flow \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} water flow \\
+
+\noindent
+\textbf{Challenge:} sculpt topography around exposed bedrock to make water flow to a given point \\
+\textbf{Analysis:} water flow with exposed bedrock \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} water flow, volume \\
+
+\noindent
+\textbf{Challenge:} given landcover sculpt the topography to make water flow to a designated point \\
+\textbf{Analysis:} water flow with landcover \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} water flow, volume \\
+
+\subsection{Landforms}
+\noindent
+\textbf{Challenge:} each round build the specified landforms until the time limit \\
+\textbf{Rounds:} 
+\begin{enumerate*}
+\item build a ridge,
+\item build a valley,
+\item \ldots
+\end{enumerate*}\\
+\textbf{Analysis:} geomorphons, contours \\
+\textbf{Interactions:} sculpting  and section cut (Blender) \\
+\textbf{Learning:} landform types, transitions, and relationships. \\ 
+
+%\noindent
+%\textbf{Landscape:} mountainous \\
+%\textbf{Analysis:} geomorphons \\
+%\textbf{Interaction:} change geomorphons' parameters \\
+%\textbf{Learning:} topographic scale invariance \\
+
+\subsection{Cut-fill} % Difference
+\noindent
+\textbf{Challenge:} build a given landscape \\ % from an initial landscape
+\textbf{Analysis:} difference, contours \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} volume and cut/fill \\
+
+\subsection{Fabrication}
+\noindent
+\textbf{Challenge:} digitally 3D model a landscape, %of your own design?
+render in 3D, and 3D print, cast a sand model for TL, and scan the sand model.\\
+\textbf{Learning:} 
+
+\subsection{Evolution}
+\noindent
+\textbf{Challenge:} predict and model how a given landscape will evolve \\
+\textbf{Analysis:} contours, water flow, erosion-deposition, landscape evolution, and difference \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} water flow, erosion-deposition, and landscape evolution \\
+
+\subsection{Trails}
+\noindent
+\textbf{Challenge:} find the easiest route across the landscape\\
+\textbf{Analysis:} trail slope, trail profile, least cost path, r.walk \\
+\textbf{Interactions:} markers  \\
+\textbf{Learning:} wayfinding \\
+
+\noindent
+\textbf{Challenge:} find the easiest route to somewhere with a view of a given feature\\
+\textbf{Analysis:} trail slope, trail profile, least cost path, r.walk, viewshed \\
+\textbf{Interactions:} markers  \\
+\textbf{Learning:} wayfinding and viewsheds \\
+
+\subsection{Design}
+% putting it all together
+\noindent
+\textbf{Challenge:} grade topography and plant trees, shrubs, and groundcover
+to minimize erosion and make a beautiful landscape. \\
+\textbf{Analysis:} water flow, erosion-deposition, 3D rendering, and VR \\
+\textbf{Interactions:} sculpting, planting model trees, and placing felt groundcover  \\
+\textbf{Learning:} design thinking, water flow, and erosion-deposition \\
+
+\noindent
+\textbf{Challenge:} place a house, make a lake in view of the house, build an access road, build a trail to the lake, fill the lake with a stream, and use all cut-fill. \\
+\textbf{Analysis:} viewshed, water flow, ponding, difference, least cost path, r.walk, 3D rendering, and VR \\
+\textbf{Interactions:} sculpting, markers, and objects  \\
+\textbf{Learning:} design thinking, viewshed, wayfinding, water flow, grading, and cut-fill \\
+
+\subsection{Detailed design}
+\noindent
+\textbf{Challenge:} Grade a road that stays dry with minimal cut-fill \\ % control storm water runoff
+\textbf{Analysis:} v.civil.road \\
+\textbf{Interactions:} sculpting  \\
+\textbf{Learning:} grading details, water flow, and cut-fill\\
+
+\section{Results}\label{results}
+%\subsection{}
+
+\section{Discussion}\label{discussion}
+\subsection{Open education}
+
+\subsection{Future work}
+\noindent
+Cognition, affect / emotion, motivation, and metacognition \\
+Experimentation and evaluation \\
+Integration with virtual reality \\
+
+\section{Curriculum}\label{curriculum}
+%\subsection{Workshops}
+Workshops
+
+\section{Conclusions}\label{conclusion}
+
+\appendix
+\section{Building Tangible Landscape}
+
+% -------------- BIBLIOGRAPHY --------------
+
+% \bibliographystyle{elsarticle-num}
+ \bibliographystyle{elsarticle-harv}
+% \bibliographystyle{elsarticle-num-names}
+% \bibliographystyle{model1a-num-names}
+% \bibliographystyle{model1b-num-names}
+% \bibliographystyle{model1c-num-names}
+% \bibliographystyle{model1-num-names}
+% \bibliographystyle{model2-names}
+% \bibliographystyle{model3a-num-names}
+% \bibliographystyle{model3-num-names}
+% \bibliographystyle{model4-names}
+% \bibliographystyle{model5-names}
+% \bibliographystyle{model6-num-names}
+
+\bibliography{tangible_teaching.bib}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-num.tex'.
